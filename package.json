@@ -1,0 +1,27 @@
+{
+	"name": "obsidian-canvas-knowledge-graph",
+	"version": "0.1.0",
+	"description": "Renders LLM Wiki knowledge graph as an Obsidian canvas.",
+	"main": "main.js",
+	"scripts": {
+		"dev": "node esbuild.config.mjs",
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production"
+	},
+	"keywords": [
+		"obsidian",
+		"canvas",
+		"knowledge-graph",
+		"visualization"
+	],
+	"author": "End User",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^22.0.0",
+		"@typescript-eslint/eslint-plugin": "^8.0.0",
+		"@typescript-eslint/parser": "^8.0.0",
+		"esbuild": "^0.25.0",
+		"obsidian": "latest",
+		"tslib": "2.8.1",
+		"typescript": "5.8.3"
+	}
+}

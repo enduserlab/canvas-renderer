@@ -51,7 +51,7 @@ export default class CanvasKnowledgeGraphPlugin extends Plugin {
 
 		// Ribbon icon
 		this.addRibbonIcon('layout-grid', 'Render knowledge graph', () => {
-			this.renderFullGraph();
+			void this.renderFullGraph();
 		});
 
 		// --- Commands --------------------------------------------------------

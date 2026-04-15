@@ -267,7 +267,7 @@ export class CanvasRendererSettingTab extends PluginSettingTab {
 
 		new Setting(containerEl)
 			.setName('Filter tiers')
-			.setDesc('Comma-separated tiers to include (working, episodic, semantic, procedural). Blank means all.')
+			.setDesc('Comma-separated tiers to include — leave blank for all tiers.')
 			.addText(text => text
 				.setValue(this.plugin.settings.render.filterTiers.join(', '))
 				.onChange(async (value) => {
@@ -281,7 +281,7 @@ export class CanvasRendererSettingTab extends PluginSettingTab {
 
 		new Setting(containerEl)
 			.setName('Filter entity types')
-			.setDesc('Comma-separated entity types to include (e.g. person, concept, project). Blank means all.')
+			.setDesc('Comma-separated entity types to include — leave blank for all types.')
 			.addText(text => text
 				.setValue(this.plugin.settings.render.filterEntityTypes.join(', '))
 				.onChange(async (value) => {
